@@ -3,6 +3,8 @@ package com.nico.store.store.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import com.nico.store.store.domain.Order;
+import com.nico.store.store.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
@@ -60,7 +62,7 @@ public class ArticleServiceImpl implements ArticleService {
 	@Override
 	@CacheEvict(value = { "sizes", "categories", "brands" }, allEntries = true)
 	public void deleteArticleById(Long id) {
-		articleRepository.deleteById(id);		
+		articleRepository.deleteById(id);
 	}
 
 	

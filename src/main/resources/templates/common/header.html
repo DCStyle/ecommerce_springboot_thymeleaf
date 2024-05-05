@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Gouda's Kartt</title>
+  <title>SE2 eCommerce Springboot + Thymeleaf</title>
   <link rel="icon" href="/image/icon-logo.png">  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">  
@@ -40,10 +40,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto font-weight-bold">
           <li class="nav-item">
-            <a class="nav-link" th:href="@{/}"> Home</a>
+            <a class="nav-link" th:href="@{/}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" th:href="@{/store}"> Store </a>
+            <a class="nav-link" th:href="@{/store}">Store</a>
           </li>
           <li class="nav-item">          
             <a class="nav-link" th:href="@{/shopping-cart/cart}">Shopping Cart 
@@ -58,10 +58,10 @@
             <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/my-profile}">My Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}"> Log Out </a>
+            <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}">Log Out</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" sec:authorize="hasRole('ADMIN')" th:href="@{/article/article-list}"> ADMIN PORTAL</a>
+            <a class="nav-link text-dark" sec:authorize="hasRole('ADMIN')" th:href="@{/article/article-list}">ADMIN PORTAL</a>
           </li>
         </ul>
       </div>
@@ -109,8 +109,8 @@
           <div class="col-sm-6 col-lg-3 pl-3">
             <h6 class="font-weight-bold ">Contact us</h6>
             <div class="list-group list-group-flush list-group-no-border list-group-sm">
-              <span class="list-group-item"><strong>Phone:</strong> 9483500835</span>
-              <span class="list-group-item"><strong>Email:</strong> contact@goudaskartt.com</span>              
+              <span class="list-group-item"><strong>Phone:</strong> 0123.456.789</span>
+              <span class="list-group-item"><strong>Email:</strong> contact@example.com</span>
               <span class="list-group-item"><strong>Mon-Fri:</strong> 9.00 am - 8.00 pm</span>
               <span class="list-group-item"><strong>Saturday:</strong> 10.00 am - 6.00 pm</span>
               
@@ -119,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright">Copyright © 2023 Gouda's Kartt' All rights reserved</div>  
+    <div class="copyright">Copyright © 2024 SE2 eCommerce Shop All rights reserved</div>
   </div>
 
 
@@ -136,6 +136,7 @@
     <script>feather.replace()</script>
     <script type="text/javascript" src="/js/jquery.simplePagination.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
     //prevent multiple form submission
     $(function() {
