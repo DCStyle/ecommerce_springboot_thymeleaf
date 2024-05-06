@@ -46,7 +46,7 @@
             <div class="row align-items-center">
         
               <div class="col-4">
-                <a th:href="@{/article-detail?id=}+${cartItem.article.id}"><img class="img-fluid" th:src="+${cartItem.article.picture}" alt="${cartItem.article.title}"></a>
+                <a th:href="@{/article-detail?id=}+${cartItem.article.id}"><img class="img-fluid" th:src="${cartItem.article.picture} ? ${cartItem.article.picture} : '/image/article/itemexample.jpg'" th:alt="${cartItem.article.title}"></a>
               </div>
               <div class="col-8">
                 <a th:href="@{/article-detail?id=}+${cartItem.article.id}" class="h6 bold d-inline-block" th:text=${cartItem.article.title}></a>

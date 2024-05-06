@@ -8,11 +8,11 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.nico.store</groupId>
-	<artifactId>store</artifactId>
+	<groupId>com.se2sky</groupId>
+	<artifactId>eshop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>store</name>
-	<description>Demo project for Spring Boot</description>
+	<description>eCommerce using Springboot + Thymeleaf</description>
 
 	<properties>
 		<java.version>1.8</java.version>
